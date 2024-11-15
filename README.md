@@ -39,3 +39,5 @@ send.py和receive.py实现了消息的发送和接收功能，分别用于将数
 ## notes
 
 此代码已经在Linux安装rabbitmq和redis，通过验证，可以下载DreamShaper_7模型和LCM_Dreamshaper_v7_4k.safetensors模型运行。
+
+最终运行顺序，启动redis，启动rabbitmq，运行stage1_vae_encode.py，运行stage2_unet_denoise.py，运行stage3_vae_decode.py，运行send_single_image.py，运行receive_single_image.py。
